@@ -1,9 +1,11 @@
-import { XMarkIcon } from '@heroicons/react/24/solid';
+import { CheckIcon, XMarkIcon } from '@heroicons/react/24/solid';
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Layout } from '../../components';
 import { FilterMontAndYear } from '../../components/molecules';
 
 export default function Index() {
+  const navigate = useNavigate();
   return (
     <Layout
       heading={'Monitoring'}
@@ -73,7 +75,9 @@ export default function Index() {
                     <button className="relative bg-red-100 text-red-700 rounded-md px-4 py-2 font-medium text-sm">
                       Reminder
                     </button>
-                    <button className="relative bg-green-100 text-green-700 rounded-md px-4 py-2 font-medium text-sm">
+                    <button
+                      onClick={() => navigate('/update')}
+                      className="relative bg-green-100 text-green-700 rounded-md px-4 py-2 font-medium text-sm">
                       Detail
                     </button>
                   </div>
@@ -97,14 +101,14 @@ export default function Index() {
                   <div
                     className="relative flex justify-center items-center"
                     title="Tidak Partnership">
-                    <XMarkIcon className="h-6 text-red-500" />
+                    <CheckIcon className="h-6 text-green-500" />
                   </div>
                 </td>
                 <td className="py-7 px-3 text-center font-semibold text-zinc-800">
                   <div
                     className="relative flex justify-center items-center"
                     title="Belum Upload SPPH">
-                    <XMarkIcon className="h-6 text-red-500" />
+                    <CheckIcon className="h-6 text-green-500" />
                   </div>
                 </td>
                 <td
@@ -149,7 +153,9 @@ export default function Index() {
                     <button className="relative bg-red-100 text-red-700 rounded-md px-4 py-2 font-medium text-sm">
                       Reminder
                     </button>
-                    <button className="relative bg-green-100 text-green-700 rounded-md px-4 py-2 font-medium text-sm">
+                    <button
+                      onClick={() => navigate('/update')}
+                      className="relative bg-green-100 text-green-700 rounded-md px-4 py-2 font-medium text-sm">
                       Detail
                     </button>
                   </div>
@@ -180,21 +186,21 @@ export default function Index() {
                   <div
                     className="relative flex justify-center items-center"
                     title="Belum Upload SPPH">
-                    <XMarkIcon className="h-6 text-red-500" />
+                    <CheckIcon className="h-6 text-green-500" />
                   </div>
                 </td>
                 <td
                   className="py-7 px-3 text-center font-semibold text-zinc-800"
                   title="Belum Upload SPH">
                   <div className="relative flex justify-center items-center">
-                    <XMarkIcon className="h-6 text-red-500" />
+                    <CheckIcon className="h-6 text-green-500" />
                   </div>
                 </td>
                 <td className="py-7 px-3 text-center font-semibold text-zinc-800">
                   <div
                     className="relative flex justify-center items-center"
                     title="Belum Upload BAKN">
-                    <XMarkIcon className="h-6 text-red-500" />
+                    <CheckIcon className="h-6 text-green-500" />
                   </div>
                 </td>
                 <td className="py-7 px-3 text-center font-semibold text-zinc-800">
@@ -225,7 +231,9 @@ export default function Index() {
                     <button className="relative bg-red-100 text-red-700 rounded-md px-4 py-2 font-medium text-sm">
                       Reminder
                     </button>
-                    <button className="relative bg-green-100 text-green-700 rounded-md px-4 py-2 font-medium text-sm">
+                    <button
+                      onClick={() => navigate('/update')}
+                      className="relative bg-green-100 text-green-700 rounded-md px-4 py-2 font-medium text-sm">
                       Detail
                     </button>
                   </div>
@@ -249,14 +257,14 @@ export default function Index() {
                   <div
                     className="relative flex justify-center items-center"
                     title="Tidak Partnership">
-                    <XMarkIcon className="h-6 text-red-500" />
+                    <CheckIcon className="h-6 text-green-500" />
                   </div>
                 </td>
                 <td className="py-7 px-3 text-center font-semibold text-zinc-800">
                   <div
                     className="relative flex justify-center items-center"
                     title="Belum Upload SPPH">
-                    <XMarkIcon className="h-6 text-red-500" />
+                    <CheckIcon className="h-6 text-green-500" />
                   </div>
                 </td>
                 <td

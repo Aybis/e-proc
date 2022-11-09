@@ -28,7 +28,7 @@ export default function Sidebar() {
       ],
     },
     {
-      sub: 'Assign -- for Manager',
+      sub: 'Assign',
       data: [
         {
           name: 'Inbox',
@@ -39,7 +39,7 @@ export default function Sidebar() {
       ],
     },
     {
-      sub: 'Allocate -- for PIC',
+      sub: 'Allocate',
       data: [
         {
           name: 'Inbox',
