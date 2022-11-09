@@ -46,7 +46,7 @@ export default function Sidebar() {
           icon: EnvelopeIcon,
           iconActive: EnvelopeIconActive,
 
-          url: '/inbox',
+          url: '/allocate',
         },
       ],
     },
