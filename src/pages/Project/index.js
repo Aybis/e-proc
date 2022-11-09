@@ -103,14 +103,14 @@ export default function Index() {
                 <td className="py-7 px-3 text-center font-semibold text-zinc-800">
                   <div
                     className="relative flex justify-center items-center"
-                    title="Tidak Partnership">
+                    title="Partnership">
                     <CheckIcon className="h-6 text-green-500" />
                   </div>
                 </td>
                 <td className="py-7 px-3 text-center font-semibold text-zinc-800">
                   <div
                     className="relative flex justify-center items-center"
-                    title="Belum Upload SPPH">
+                    title="Sudah Upload SPPH">
                     <CheckIcon className="h-6 text-green-500" />
                   </div>
                 </td>
@@ -190,13 +190,13 @@ export default function Index() {
                 <td className="py-7 px-3 text-center font-semibold text-zinc-800">
                   <div
                     className="relative flex justify-center items-center"
-                    title="Belum Upload SPPH">
+                    title="Sudah Upload SPPH">
                     <CheckIcon className="h-6 text-green-500" />
                   </div>
                 </td>
                 <td
                   className="py-7 px-3 text-center font-semibold text-zinc-800"
-                  title="Belum Upload SPH">
+                  title="Sudah Upload SPH">
                   <div className="relative flex justify-center items-center">
                     <CheckIcon className="h-6 text-green-500" />
                   </div>
@@ -204,7 +204,7 @@ export default function Index() {
                 <td className="py-7 px-3 text-center font-semibold text-zinc-800">
                   <div
                     className="relative flex justify-center items-center"
-                    title="Belum Upload BAKN">
+                    title="Sudah Upload BAKN">
                     <CheckIcon className="h-6 text-green-500" />
                   </div>
                 </td>
@@ -263,14 +263,14 @@ export default function Index() {
                 <td className="py-7 px-3 text-center font-semibold text-zinc-800">
                   <div
                     className="relative flex justify-center items-center"
-                    title="Tidak Partnership">
+                    title="Partnership">
                     <CheckIcon className="h-6 text-green-500" />
                   </div>
                 </td>
                 <td className="py-7 px-3 text-center font-semibold text-zinc-800">
                   <div
                     className="relative flex justify-center items-center"
-                    title="Belum Upload SPPH">
+                    title="Sudah Upload SPPH">
                     <CheckIcon className="h-6 text-green-500" />
                   </div>
                 </td>
