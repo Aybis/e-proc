@@ -1,16 +1,13 @@
 import { XMarkIcon } from '@heroicons/react/24/solid';
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import { Layout } from '../../components';
 import { FilterMontAndYear } from '../../components/molecules';
 
 export default function Index() {
-  const navigate = useNavigate();
-
   return (
     <Layout
-      heading={'List Project'}
-      subHeading="This page for PIC after confim Inbox">
+      heading={'Monitoring'}
+      subHeading="This page privilege by Manager for monitoring Project and Reminder who the hell employee doesn't work">
       <FilterMontAndYear />
 
       <div className="relative mt-4">
@@ -73,10 +70,8 @@ export default function Index() {
               <tr>
                 <td className="py-7 px-3 text-center">
                   <div className="relative flex justify-center items-center gap-3">
-                    <button
-                      onClick={() => navigate('/update')}
-                      className="relative bg-indigo-100 text-indigo-700 rounded-md px-4 py-2 font-medium text-sm">
-                      Update
+                    <button className="relative bg-red-100 text-red-700 rounded-md px-4 py-2 font-medium text-sm">
+                      Reminder
                     </button>
                     <button className="relative bg-green-100 text-green-700 rounded-md px-4 py-2 font-medium text-sm">
                       Detail
@@ -151,10 +146,8 @@ export default function Index() {
               <tr>
                 <td className="py-7 px-3 text-center">
                   <div className="relative flex justify-center items-center gap-3">
-                    <button
-                      onClick={() => navigate('/update')}
-                      className="relative bg-indigo-100 text-indigo-700 rounded-md px-4 py-2 font-medium text-sm">
-                      Update
+                    <button className="relative bg-red-100 text-red-700 rounded-md px-4 py-2 font-medium text-sm">
+                      Reminder
                     </button>
                     <button className="relative bg-green-100 text-green-700 rounded-md px-4 py-2 font-medium text-sm">
                       Detail
@@ -229,10 +222,8 @@ export default function Index() {
               <tr>
                 <td className="py-7 px-3 text-center">
                   <div className="relative flex justify-center items-center gap-3">
-                    <button
-                      onClick={() => navigate('/update')}
-                      className="relative bg-indigo-100 text-indigo-700 rounded-md px-4 py-2 font-medium text-sm">
-                      Update
+                    <button className="relative bg-red-100 text-red-700 rounded-md px-4 py-2 font-medium text-sm">
+                      Reminder
                     </button>
                     <button className="relative bg-green-100 text-green-700 rounded-md px-4 py-2 font-medium text-sm">
                       Detail

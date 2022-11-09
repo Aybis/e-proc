@@ -57,15 +57,19 @@ export default function Sidebar() {
           name: 'Project',
           icon: EnvelopeOpenIcon,
           iconActive: EnvelopeOpenIconActive,
-
           url: '/project',
         },
         {
           name: 'Amandemen',
           icon: WrenchScrewdriverIcon,
           iconActive: WrenchScrewdriverIconActive,
-
           url: '/amandemen',
+        },
+        {
+          name: 'Monitoring',
+          icon: EnvelopeOpenIcon,
+          iconActive: EnvelopeOpenIconActive,
+          url: '/monitoring',
         },
       ],
     },
@@ -102,9 +106,10 @@ export default function Sidebar() {
                       <Link
                         to={subItem.url}
                         className={[
-                          'group flex items-center px-2 py-2 text-base font-medium leading-relaxed tracking-wide text-gray-400 rounded-md hover:bg-blue-50 hover:text-blue-600 transition-all duration-300',
-                          location.pathname === subItem.url &&
-                            'text-blue-500 font-semibold',
+                          'group flex items-center px-2 py-2 text-base leading-relaxed hover:font-semibold rounded-md hover:bg-blue-50 hover:text-blue-600 transition-all duration-300',
+                          location.pathname === subItem.url
+                            ? 'text-blue-500 font-bold'
+                            : 'text-gray-400 font-normal',
                         ].join(' ')}>
                         {location.pathname === subItem.url ? (
                           <subItem.iconActive
@@ -113,7 +118,7 @@ export default function Sidebar() {
                           />
                         ) : (
                           <subItem.icon
-                            className="flex-shrink-0 h-7 text-gray-400 group-hover:text-blue-500"
+                            className="flex-shrink-0 h-7 text-gray-400/80 group-hover:text-blue-500 transition-all duration-300"
                             aria-hidden="true"
                           />
                         )}
@@ -128,7 +133,7 @@ export default function Sidebar() {
           </nav>
 
           {/* Logout */}
-          <div className="flex flex-shrink-0 shadow-xl rounded-xl p-4 flex-col justify-center items-center bg-white mx-4">
+          <div className="flex flex-shrink-0 rounded-xl p-4 flex-col justify-center items-center bg-zinc-50 mx-4">
             <div className="relative">
               <ChatBubbleLeftEllipsisIcon className="h-24 text-blue-500" />
             </div>
